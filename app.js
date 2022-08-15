@@ -7,6 +7,8 @@ const app = Vue.createApp({
       title: "The Final Empire",
       author: "Adam Sanders",
       year: 1984,
+      x: 0,
+      y: 0,
     };
   },
 
@@ -16,6 +18,16 @@ const app = Vue.createApp({
     },
     toggleShowBooks() {
       this.showBooks = !this.showBooks;
+    },
+    handleEvent(event, arg) {
+      console.log(event, event.type);
+      if (arg) {
+        console.log(arg);
+      }
+    },
+    handleMousemove(eventObj) {
+      this.x = eventObj.offsetX;
+      this.y = eventObj.offsetY;
     },
   },
 });
