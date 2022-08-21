@@ -15,21 +15,72 @@
         margin: 20px;
         display: inline-block;
       }
+
+      body {
+        background: #eee;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      p,
+      h3,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        background: #fff;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      li.fav {
+        background: green;
+        color: white;
+      }
     </style>
   </head>
   <body>
     <h1>Hello, Vue.js</h1>
 
     <div id="app">
+
       <!-- <h2>I am the vue template now</h2> -->
       <div v-if="showBooks">
         <p>{{title}} - {{author}} - {{year}}</p>
       </div>
 
+      <div v-if="showBooks">
+        <p>{{booksArray[0].title}} - {{booksArray[0].author}}</p>
+
+        <ul>
+          <li
+            v-for="item in filteredbooks"
+            :class="{fav: item.isFav}"
+            @click="toggleisFav(item)"
+          >
+            <img :src="item.img" :alt="item.title" width="200" />
+            <h3>{{item.title}}</h3>
+            <p>{{item.author}}</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <a v-bind:href="url">wirtualna</a> -->
+      <!--shortcut : == v-bind: -->
+      <a :href="url">wirtualna</a>
+      <br />
+
       <button v-on:click="year++">Increase year</button>
       <button v-on:click="year--">Decrease year</button>
       <!-- <div @click="title = 'some other title'">change book</div> -->
-      <div @click="changeTitle('Oath Eater')">change book</div>
+      <div @click="changeTitle('Oath Eater')">change book - click me!!!</div>
 
       <button @click="toggleShowBooks">
         <span v-if="showBooks">Hide Books</span>
