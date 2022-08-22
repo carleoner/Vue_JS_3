@@ -1,0 +1,8 @@
+{
+  "jobs": [
+    { "title": "kolarz", "id": 1, "details": "lorem" },
+    { "title": "plywak", "id": 2, "details": "lorem" },
+    { "title": "biegacz", "id": 3, "details": "lorem" }
+  ],
+  "blogs": []
+}

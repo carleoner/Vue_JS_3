@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to the blog",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur harum laudantium facere similique necessitatibus corporis iure eveniet earum delectus repellendus, autem error aut dolore corrupti nostrum odio ullam aliquid beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur harum laudantium facere similique necessitatibus corporis iure eveniet earum delectus repellendus, autem error aut dolore corrupti nostrum odio ullam aliquid beatae?",
+      "tags": ["webdev", "welcome"]
+    },
+    {
+      "id": 2,
+      "title": "top 7 tips",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur harum laudantium facere similique necessitatibus corporis iure eveniet earum delectus repellendus, autem error aut dolore corrupti nostrum odio ullam aliquid beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur harum laudantium facere similique necessitatibus corporis iure eveniet earum delectus repellendus, autem error aut dolore corrupti nostrum odio ullam aliquid beatae?",
+      "tags": ["tips", "webdev"]
+    }
+  ]
+}
